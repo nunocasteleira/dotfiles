@@ -1,0 +1,6 @@
+tap "homebrew/bundle"
+brew "chezmoi"
+brew "jq"
+brew "neovim"
+brew "ripgrep"
+brew "rtx"
