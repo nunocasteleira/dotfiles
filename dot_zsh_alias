@@ -7,7 +7,7 @@ alias rm='rm -I' # use with brew install coreutils
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
-alias oneshop = cd ~/Repositories/OneShop/
-alias repos = cd ~/Repositories/
+alias oneshop="cd ~/Repositories/OneShop/"
+alias repos="cd ~/Repositories/"
 
-alias reload = "source ~/.zshrc"
+alias reload="source ~/.zshrc"
