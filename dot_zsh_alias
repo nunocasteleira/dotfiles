@@ -1,6 +1,8 @@
 alias vim=nvim
 alias pip=pip3
 alias python=python3
+# https://github.com/sindresorhus/guides/blob/9dfae1832dd2dacfb8095287044537c0ccb29ab8/how-not-to-rm-yourself.md
+alias rm='rm -I' # use with brew install coreutils
 
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
