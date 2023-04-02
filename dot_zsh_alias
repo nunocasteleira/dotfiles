@@ -9,3 +9,5 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 
 alias oneshop = cd ~/Repositories/OneShop/
 alias repos = cd ~/Repositories/
+
+alias reload = "source ~/.zshrc"
