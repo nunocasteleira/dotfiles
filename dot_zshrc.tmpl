@@ -78,6 +78,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zsh_alias
 
 # User configuration
 
@@ -102,11 +103,16 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 
-
+# machine-specific configuration
+{{- if eq .chezmoi.hostname "Nunos-CTW-MacBook-Pro" }}
+# this will only be included in ~/.bashrc on work-laptop
+export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/Current/bin"
+{{- else }}
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
 export CR_PAT=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
+{{- end }}
