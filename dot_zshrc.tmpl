@@ -106,9 +106,11 @@ export EDITOR='nvim'
 source ~/.zsh_alias
 
 # machine-specific configuration
-{{- if eq .chezmoi.hostname "Nunos-CTW-MacBook-Pro" }}
+{{- if eq .chezmoi.hostname "Nunos-CTW-MBP" }}
 # this will only be included in ~/.bashrc on work-laptop
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/Current/bin"
+eval "$(rtx activate zsh)"
+
 {{- else }}
 # Load Angular CLI autocompletion.
 source <(ng completion script)
