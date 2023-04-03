@@ -61,4 +61,12 @@ return require('packer').startup(function(use)
 
     use('f-person/auto-dark-mode.nvim')
 
+    use({                                     -- Formatting 
+        "jose-elias-alvarez/null-ls.nvim",
+        config = function()
+            require("null-ls").setup()
+        end,
+        requires = { "nvim-lua/plenary.nvim" },
+    })
+
 end)
