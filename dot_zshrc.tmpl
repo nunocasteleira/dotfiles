@@ -117,4 +117,8 @@ eval "$(rtx activate zsh)"
 {{- else }}
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+# github cli
+autoload -U compinit
+compinit -i
 {{- end }}
