@@ -33,7 +33,7 @@ return require("packer").startup(function(use)
 	use("tpope/vim-rhubarb")
 	use("lewis6991/gitsigns.nvim")
 
-	-- use 'nvim-lualine/lualine.nvim' -- Fancier statusline
+	use("nvim-lualine/lualine.nvim") -- Fancier statusline
 	use("numToStr/Comment.nvim") -- "gc" to comment visual regions/lines
 	use("tpope/vim-sleuth") -- Detect tabstop and shiftwidth automatically
 
