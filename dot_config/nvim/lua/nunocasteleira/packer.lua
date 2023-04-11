@@ -67,6 +67,8 @@ return require("packer").startup(function(use)
 		"jose-elias-alvarez/null-ls.nvim",
 		requires = { "nvim-lua/plenary.nvim" },
 	})
+
+	-- Syntax highlight for kitty files
 	use("fladson/vim-kitty")
 
 	-- Startup Screen
@@ -74,4 +76,7 @@ return require("packer").startup(function(use)
 		"goolord/alpha-nvim",
 		requires = { "nvim-tree/nvim-web-devicons" },
 	})
+
+	-- Zen mode
+	use("folke/zen-mode.nvim")
 end)
