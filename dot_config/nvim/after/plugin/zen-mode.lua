@@ -11,7 +11,7 @@ zen.setup({
 	plugins = {
         kitty = {
             enabled = true,
-            font = "+6",
+            font = "+4",
         },
     },
 })
