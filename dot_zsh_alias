@@ -11,3 +11,4 @@ alias oneshop="cd ~/Repositories/OneShop/"
 alias repos="cd ~/Repositories/"
 
 alias reload="source ~/.zshrc"
+alias pn=pnpm
