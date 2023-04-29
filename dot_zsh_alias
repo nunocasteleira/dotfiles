@@ -12,3 +12,12 @@ alias repos="cd ~/Repositories/"
 
 alias reload="source ~/.zshrc"
 alias pn=pnpm
+# -------------------------------------------------------------------
+# Git stuff
+# -------------------------------------------------------------------
+
+# Shortcut to checkout master and pull from upstream
+alias gu="git checkout master && git pull upstream master"
+
+# Clean, compact git status
+alias s="git status -sb"

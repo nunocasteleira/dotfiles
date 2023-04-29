@@ -110,7 +110,7 @@ source ~/.zsh_alias
 
 # machine-specific configuration
 {{- if eq .chezmoi.hostname "Nunos-CTW-MBP" "Nunos-CTW-MacBook-Pro" }}
-# this will only be included in ~/.bashrc on work-laptop
+# this will only be included in ~/.zshrc on work-laptop
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/Current/bin"
 eval "$(rtx activate zsh)"
 
@@ -121,4 +121,7 @@ source <(ng completion script)
 # github cli
 autoload -U compinit
 compinit -i
+
+# starship.rs cross-shell prompt
+eval "$(starship init zsh)"
 {{- end }}
