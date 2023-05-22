@@ -113,6 +113,7 @@ source ~/.zsh_alias
 # this will only be included in ~/.zshrc on work-laptop
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/Current/bin"
 eval "$(rtx activate zsh)"
+alias bmwlogin="bmwaws login && aws codeartifact login --tool npm --domain ecp --domain-owner 468027969690 --repository ecp --profile ECP_BE_TEST --namespace @ecp && aws codeartifact login --tool npm --domain ecp --domain-owner 468027969690 --repository ecp --profile ECP_BE_TEST --namespace @webcom"
 
 {{- else }}
 # Load Angular CLI autocompletion.
