@@ -8,4 +8,4 @@ disabled = true
 truncate_to_repo = false
 
 [directory.substitutions]
-"~/github" = "github.com"
+"~/Repositories/github" = "github.com"
