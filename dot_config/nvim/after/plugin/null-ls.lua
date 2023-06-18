@@ -25,10 +25,3 @@ null_ls.setup({
 		end
 	end,
 })
-
-require("crates").setup({
-	null_ls = {
-		enabled = true,
-		name = "crates.nvim",
-	},
-})
