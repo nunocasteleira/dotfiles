@@ -81,4 +81,14 @@ return require("packer").startup(function(use)
 
 	-- Zen mode
 	use("folke/zen-mode.nvim")
+
+	-- Rust Crates
+	use({
+		"saecki/crates.nvim",
+		event = { "BufRead Cargo.toml" },
+		requires = { "nvim-lua/plenary.nvim" },
+		config = function()
+			require("crates").setup()
+		end,
+	})
 end)
