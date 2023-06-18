@@ -7,6 +7,7 @@ null_ls.setup({
         null_ls.builtins.diagnostics.eslint,
         null_ls.builtins.formatting.prettierd,
         null_ls.builtins.formatting.stylua,
+        null_ls.builtins.formatting.rustfmt
     },
     -- you can reuse a shared lspconfig on_attach callback here
     on_attach = function(client, bufnr)
