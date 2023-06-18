@@ -86,8 +86,5 @@ return require("packer").startup(function(use)
 	use({
 		"saecki/crates.nvim",
 		requires = { "nvim-lua/plenary.nvim" },
-		config = function()
-			require("crates").setup()
-		end,
 	})
 end)
