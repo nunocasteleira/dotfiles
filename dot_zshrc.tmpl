@@ -114,6 +114,7 @@ source ~/.zsh_alias
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/Current/bin"
 eval "$(~/.local/bin/mise activate zsh)"
 alias bmwlogin="bmwaws login && aws codeartifact login --tool npm --domain ecp --domain-owner 468027969690 --repository ecp --profile ECP_BE_TEST --namespace @ecp && aws codeartifact login --tool npm --domain ecp --domain-owner 468027969690 --repository ecp --profile ECP_BE_TEST --namespace @webcom"
+alias mono="cd ~/Repositories/OneShop/oneshop-fe"
 
 {{- else }}
 # github cli
