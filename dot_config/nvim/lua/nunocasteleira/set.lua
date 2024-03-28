@@ -1,4 +1,4 @@
- vim.opt.guicursor = ""
+vim.opt.guicursor = ""
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -33,4 +33,3 @@ vim.opt.colorcolumn = "80"
 -- Case insensitive searching UNLESS /C or capital in search
 vim.o.ignorecase = true
 vim.o.smartcase = true
-
