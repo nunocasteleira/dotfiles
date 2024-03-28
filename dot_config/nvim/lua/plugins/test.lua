@@ -1,5 +1,5 @@
 return {
-  { "vim-neotest/neotest-jest" },
+  { "nvim-neotest/neotest-jest" },
   {
     "nvim-neotest/neotest",
     opts = {
