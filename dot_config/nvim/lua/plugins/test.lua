@@ -7,22 +7,33 @@ return {
         ["neotest-jest"] = {
           args = {
             jestCommand = "npm test --",
+            env = { CI = true },
             jestConfigFile = function(file)
-              if string.find(file, "/packages/") then
-                return string.match(file, "(.-/[^/]+/)src") .. "jest.config.ts"
-              end
-              if string.find(file, "apps/") then
+              if string.find(file, "packages/") or string.find(file, "apps/") then
                 return string.match(file, "(.-/[^/]+/)src") .. "jest.config.ts"
               end
 
               return vim.fn.getcwd() .. "/jest.config.ts"
             end,
-            env = { CI = true },
-            cwd = function(path)
+            cwd = function(file)
+              if string.find(file, "packages/") or string.find(file, "apps/") then
+                return string.match(file, "(.-/[^/]+/)src")
+              end
+
               return vim.fn.getcwd()
             end,
           },
         },
+      },
+    },
+    keys = {
+
+      {
+        "<leader>tc",
+        function()
+          require("neotest").output_panel.clear()
+        end,
+        desc = "Clear Output Panel",
       },
     },
   },
