@@ -1,3 +1,8 @@
+local wk = require("which-key")
+wk.add({
+  { "<leader>r", group = "rulebook" }, -- group
+})
+
 return {
   {
     "chrisgrieser/nvim-rulebook",
